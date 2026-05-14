@@ -13,7 +13,7 @@ Use this skill when the task should run as a pure Codex workflow. The primary ex
 - summarize only after verifying the underlying article page or source page
 
 Default behavior:
-- Last 30 days only
+- Last 7 days only
 - AI / agent security topics only
 - Output article records with `title`, `time`, `source`, `author`, `link`, `summary`, and `keywords`
 - No extra OpenAI or Packy API key is required
@@ -138,7 +138,7 @@ Prefer query shapes like:
 - `site:vendor.com/blog litellm OR model gateway security`
 - `site:vendor.com/blog vector database OR inference engine security`
 - `site:vendor.com/blog github actions OR coding agent security`
-- `site:vendor.com/blog "last 30 days"`
+- `site:vendor.com/blog "last 7 days"`
 - `site:source-domain recent ai security blog`
 
 If the first pass is sparse, expand with concept terms such as:
@@ -165,7 +165,7 @@ If the first pass is sparse, expand with concept terms such as:
 When the user asks for a digest:
 1. Use the curated source list first.
 2. Browse current pages and verify dates.
-3. Return the most relevant items from the last 30 days.
+3. Return the most relevant items from the last 7 days.
 4. Mention exact dates when useful.
 5. Include source links.
 6. If the user is reasoning about the software stack, group the results by top layer, middle layer, and bottom layer.

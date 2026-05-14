@@ -1,7 +1,7 @@
 interface:
   display_name: "AgentSec Blogs"
   short_description: "Browse AI and agent stack security blogs"
-  default_prompt: "Use $agentsec-blogs to browse curated sources on the web, verify recent AI or agent stack security posts from the last 30 days, and return a concise digest with title, time, source, author, link, summary, and keywords. Group findings by protocols, frameworks, workflows, inference, and infrastructure when helpful."
+  default_prompt: "Use $agentsec-blogs to browse curated sources on the web, verify recent AI or agent stack security posts from the last 7 days, and return a concise digest with title, time, source, author, link, summary, and keywords. Group findings by protocols, frameworks, workflows, inference, and infrastructure when helpful."
 
 policy:
   allow_implicit_invocation: true

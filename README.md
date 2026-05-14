@@ -5,7 +5,7 @@
 ## What It Does
 
 - Searches current sources on the web through Codex
-- Focuses on the last 30 days by default
+- Focuses on the last 7 days by default
 - Filters for AI, agent, MCP, A2A, AGENTS.md, workflow, inference, vector database, training, and related security topics
 - Returns structured digest fields:
   - `title`
@@ -41,7 +41,7 @@ After installation, restart Codex.
 
 Example prompts:
 
-- `Use $agentsec-blogs to summarize recent AI security blogs from the last 30 days.`
+- `Use $agentsec-blogs to summarize recent AI security blogs from the last 7 days.`
 - `Use $agentsec-blogs to find recent agent security research and return title, source, link, summary, and keywords.`
 - `Use $agentsec-blogs to expand the current source list with more AI security blogs.`
 - `Use $agentsec-blogs to map recent incidents by layer: protocols, frameworks, workflow engines, inference, and infrastructure.`
