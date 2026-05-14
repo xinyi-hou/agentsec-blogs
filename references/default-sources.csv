@@ -1,0 +1,57 @@
+Category,Platform,Portal,Notes
+Advisory,CISA,https://www.cisa.gov/news-events/cybersecurity-advisories,Authoritative US advisories
+Advisory,NVD,https://nvd.nist.gov/,NIST vulnerability database
+Advisory,MSRC,https://msrc.microsoft.com/blog/,Microsoft security response blog
+Security Blog,Pillar,https://www.pillar.security/blog,AI security blog
+Security Blog,Zenity Labs,https://labs.zenity.io/,Agentic AI security research
+Security Blog,Embrace The Red,https://embracethered.com/blog/,Offensive security and AI
+Security Blog,The Hacker News,https://thehackernews.com/,Security news
+Security Blog,Legit Security Blog,https://www.legitsecurity.com/blog,Application security
+Security Blog,Protect AI,https://protectai.com/blog,AI security
+Security Blog,Lakera,https://www.lakera.ai/blog,AI security research
+Security Blog,FreeBuf,https://www.freebuf.com/,Chinese security community
+Security Blog,KOI,https://www.koi.ai/blog,AI security
+Security Blog,Promptfoo,https://www.promptfoo.dev/blog/,LLM and red-team tooling
+Security Blog,Simon Willison’s Weblog,https://simonwillison.net/,LLM and agent ecosystem
+Security Blog,安全客,https://www.anquanke.com/,Chinese security news
+Security Blog,HiddenLayer,https://www.hiddenlayer.com/innovation-hub,Model and AI security research
+Security Blog,Mindgard,https://mindgard.ai/learn/blog,AI security research
+Security Blog,Trustwave Blog,https://www.trustwave.com/en-us/resources/blogs/trustwave-blog,General security research
+Security Blog,SpiderLabs Blog,https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog,Threat research
+Security Blog,LayerX,https://layerxsecurity.com/blog/,Browser and enterprise security
+Security Blog,Wiz,https://www.wiz.io/blog,Cloud security
+Security Blog,SecurityOnline.info,https://securityonline.info/category/news/vulnerability-report/,Vulnerability news
+Security Blog,repello.ai,https://repello.ai/blog,AI security
+Security Blog,splx.ai,https://splx.ai/blog,AI security
+Security Blog,noma,https://noma.security/blog/,AI and enterprise security
+Security Blog,SecurityWeek,https://www.securityweek.com/,Security news
+Security Blog,Aikido,https://www.aikido.dev/category/vulnerabilities-threats,Threat and vulnerability news
+Vendor Research,Unit 42,https://unit42.paloaltonetworks.com/,Threat research
+Vendor Research,Talos,https://blog.talosintelligence.com/,Threat research
+Vendor Research,Securelist,https://securelist.com/,Threat research
+Vendor Research,Rapid7,https://www.rapid7.com/blog/,Threat research
+Vendor Research,Trail of Bits,https://blog.trailofbits.com/,Offensive and defensive security research
+Vendor Research,Mandiant,https://cloud.google.com/blog/topics/threat-intelligence,Threat intelligence and incident research
+Vendor Research,SentinelOne Labs,https://www.sentinelone.com/labs/,Threat research
+Vendor Research,Volexity,https://www.volexity.com/blog/,Threat intelligence and incident response
+Vendor Research,Red Canary,https://redcanary.com/resources-center/category/blog/,Threat detection and response
+Vendor Research,Huntress,https://www.huntress.com/blog,Threat hunting and incident response
+Vendor Research,Sekoia,https://blog.sekoia.io/,Threat intelligence
+Vendor Research,watchTowr Labs,https://labs.watchtowr.com/,Offensive research and exploitation
+Vendor Research,Google Project Zero,https://projectzero.google/,0day and vulnerability research
+Vendor Research,WithSecure Labs,https://labs.withsecure.com/home,Threat and malware research
+Vendor Research,Elastic Security Labs,https://www.elastic.co/security-labs,Threat research and detections
+Vendor Research,Datadog Security Labs,https://securitylabs.datadoghq.com/,Cloud and application security research
+Vendor Research,GreyNoise,https://www.greynoise.io/blog,Internet scanning and exploitation telemetry
+Vendor Research,any.run Blog,https://any.run/cybersecurity-blog/,Malware and sandbox research
+Security News,BleepingComputer,https://www.bleepingcomputer.com/,Security news
+Security News,The Record,https://therecord.media/,Cybersecurity reporting
+Security News,Dark Reading,https://www.darkreading.com/,Security news and analysis
+Security News,Krebs on Security,https://krebsonsecurity.com/,Independent investigative reporting
+Security News,CyberScoop,https://cyberscoop.com/,Cybersecurity reporting
+Security News,Infosecurity Magazine,https://www.infosecurity-magazine.com/,Security news and analysis
+Security News,Security Affairs,https://securityaffairs.com/,Security news and incident coverage
+Vulnerability Database,HackerOne,https://www.hackerone.com/,Bug bounty and disclosures
+Vulnerability Database,Bugcrowd,https://www.bugcrowd.com/,Bug bounty and disclosures
+Vulnerability Database,huntr,https://huntr.com/,Open source vulnerability disclosures
+Vulnerability Database,CERT/CC Vulnerability Notes Database,https://kb.cert.org/vuls/,Authoritative vuln notes

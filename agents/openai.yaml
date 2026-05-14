@@ -1,0 +1,7 @@
+interface:
+  display_name: "AgentSec Blogs"
+  short_description: "Browse and summarize recent AI security blogs"
+  default_prompt: "Use $agentsec-blogs to browse curated sources on the web, verify recent AI or agent security posts from the last 30 days, and return a concise digest with title, time, source, author, link, summary, and keywords."
+
+policy:
+  allow_implicit_invocation: true
