@@ -1,6 +1,6 @@
 ---
 name: agentsec-blogs
-description: Use Codex web browsing to find, verify, filter, and summarize recent security blogs and advisories from curated sources. Use when the user asks for an interactive security blog digest, a recent AI or agent security roundup, or a source-backed watchlist without requiring extra API keys.
+description: Use Codex web browsing to find, verify, filter, and summarize recent security blogs and advisories across the AI and agent stack. Use when the user asks for an interactive AI or agent security digest, a source-backed watchlist, or a layer-by-layer roundup covering protocols, frameworks, workflows, inference, and infrastructure.
 ---
 
 # AgentSec Blogs
@@ -17,6 +17,37 @@ Default behavior:
 - AI / agent security topics only
 - Output article records with `title`, `time`, `source`, `author`, `link`, `summary`, and `keywords`
 - No extra OpenAI or Packy API key is required
+
+## Coverage Model
+
+Treat the target space as a layered AI and agent ecosystem:
+- Top layer:
+  - AI agents
+  - coding agents
+  - browser or desktop agents
+  - edge or embodied agents
+  - model application stores
+  - model platforms
+  - protocol and skill surfaces such as MCP, A2A, ANP, ACP, Skills, and `AGENTS.md`
+- Middle layer:
+  - agent development frameworks
+  - workflow orchestration frameworks
+  - reasoning engines
+  - inference engines
+  - inference deployment
+  - model gateways
+  - LLM caches
+  - tool routing and execution paths
+- Bottom layer:
+  - vector databases
+  - retrieval systems
+  - fine-tuning
+  - reinforcement learning
+  - training platforms
+  - distributed training
+  - AI kernel and runtime libraries
+
+If the user asks for a roundup or analysis, prefer grouping findings by these layers when it improves readability.
 
 ## Workflow
 
@@ -42,9 +73,11 @@ Default behavior:
 
 Treat an item as relevant when it is materially about any of:
 - AI, LLM, GenAI, model security, jailbreaks, prompt injection, indirect prompt injection
-- AI agents, coding agents, tool use, memory, planning, reasoning, autonomous workflows
-- MCP, Model Context Protocol, agent frameworks, orchestration layers, workflow engines
+- AI agents, coding agents, browser agents, tool use, memory, planning, reasoning, autonomous workflows
+- MCP, Model Context Protocol, A2A, ANP, ACP, `AGENTS.md`, agent skills, agent frameworks, orchestration layers, workflow engines
+- inference engines, model serving, model gateways, LLM caches, reasoning runtimes
 - RAG, embeddings, vector databases, vector stores, retrieval systems for AI apps
+- fine-tuning, reinforcement learning, training platforms, distributed training, AI runtime or kernel libraries
 - vulnerabilities, incidents, exploits, detections, benchmarks, or research affecting the AI or agent stack
 
 Also include adjacent infrastructure topics when the AI or agent angle is clear, for example:
@@ -55,6 +88,17 @@ Also include adjacent infrastructure topics when the AI or agent angle is clear,
 - memory poisoning
 - prompt injection in enterprise SaaS copilots
 - vector store abuse
+- workflow supply chain compromise
+- configuration-driven code execution
+- browser extension hijack against AI agents
+- control-plane flaws in inference or model platforms
+
+Representative in-scope examples include:
+- `Semantic Kernel` and `CrewAI` framework vulnerabilities
+- `TrustFall`, `Claude Code MCP Token Theft`, and MCP by-design execution disputes
+- `ClaudeBleed` and other browser agent confused deputy issues
+- `Gemini CLI` and `GitHub Actions` agentic workflow incidents
+- `LiteLLM`, `LeRobot`, and similar inference or infrastructure flaws
 
 Exclude:
 - generic cybersecurity news with no meaningful AI or agent angle
@@ -90,19 +134,31 @@ Prefer query shapes like:
 - `site:vendor.com/blog agent security`
 - `site:vendor.com/blog prompt injection`
 - `site:vendor.com/blog copilot OR agentic OR mcp`
+- `site:vendor.com/blog semantic kernel OR crewai security`
+- `site:vendor.com/blog litellm OR model gateway security`
+- `site:vendor.com/blog vector database OR inference engine security`
+- `site:vendor.com/blog github actions OR coding agent security`
 - `site:vendor.com/blog "last 30 days"`
 - `site:source-domain recent ai security blog`
 
 If the first pass is sparse, expand with concept terms such as:
 - `agent workflow`
 - `agent framework`
+- `agent protocol`
+- `agent skill`
 - `reasoning engine`
+- `inference engine`
+- `model serving`
 - `vector database`
 - `rag security`
 - `tool calling`
 - `copilot security`
 - `model gateway`
 - `agent memory`
+- `fine-tuning security`
+- `distributed training security`
+- `agent2agent`
+- `agents.md`
 
 ## Interaction Pattern
 
@@ -112,6 +168,7 @@ When the user asks for a digest:
 3. Return the most relevant items from the last 30 days.
 4. Mention exact dates when useful.
 5. Include source links.
+6. If the user is reasoning about the software stack, group the results by top layer, middle layer, and bottom layer.
 
 When the user asks to refresh or expand the source list:
 1. Compare candidate sources against `references/default-sources.csv`.

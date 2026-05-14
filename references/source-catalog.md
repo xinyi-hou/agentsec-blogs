@@ -7,6 +7,30 @@ Use the CTI tiering model as the ranking rule:
 - Tier 3: security news and community writeups
 - Tier 4: OSINT, PoC, sandbox, and specialist sources
 
+## Coverage Hints
+
+When expanding or validating the watchlist, treat the target space as:
+
+- Top layer:
+  - agents
+  - coding agents
+  - browser agents
+  - model platforms
+  - MCP, A2A, ANP, ACP, Skills, `AGENTS.md`
+- Middle layer:
+  - agent frameworks
+  - workflow orchestration
+  - reasoning and inference engines
+  - deployment, model gateways, and caching
+- Bottom layer:
+  - vector databases
+  - retrieval systems
+  - fine-tuning
+  - reinforcement learning
+  - training platforms
+  - distributed training
+  - AI runtime libraries
+
 ## Seed Inputs
 
 - `references/default-sources.csv`

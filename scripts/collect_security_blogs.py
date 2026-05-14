@@ -86,9 +86,35 @@ DEFAULT_AI_KEYWORDS = [
     "llm",
     "mcp",
     "model context protocol",
+    "agent2agent",
+    "agent-to-agent",
+    "a2a protocol",
+    "agent network protocol",
+    "agent communication protocol",
+    "agents.md",
+    "agent skill",
+    "agent framework",
+    "workflow orchestration",
+    "workflow engine",
+    "reasoning engine",
+    "inference engine",
+    "model serving",
+    "llm gateway",
+    "model gateway",
+    "browser agent",
+    "coding agent",
+    "tool calling",
+    "tool use",
+    "semantic kernel",
+    "crewai",
+    "litellm",
+    "lerobot",
     "prompt injection",
     "indirect prompt injection",
     "copilot",
+    "github actions",
+    "gemini cli",
+    "claude code",
     "chatgpt",
     "claude",
     "gemini",
@@ -98,6 +124,15 @@ DEFAULT_AI_KEYWORDS = [
     "generative ai",
     "jailbreak",
     "rag",
+    "vector database",
+    "vector store",
+    "embedding",
+    "fine-tuning",
+    "fine tuning",
+    "reinforcement learning",
+    "rlhf",
+    "training platform",
+    "distributed training",
     "ai",
 ]
 KNOWN_FEED_URLS = {
@@ -115,10 +150,18 @@ AI_RELEVANCE_RULES = """You classify whether a security or technology article is
 
 Mark relevant=true if the article is materially about any of:
 - AI, LLM, GenAI, model security, jailbreaks, prompt injection, data exfiltration through models
-- AI agents, coding agents, copilots, autonomous workflows, tool use, memory, planning, reasoning engines
-- MCP / Model Context Protocol, agent frameworks, workflow engines, orchestration layers
+- AI agents, coding agents, browser agents, copilots, autonomous workflows, tool use, memory, planning, reasoning engines
+- MCP / Model Context Protocol, A2A, ANP, ACP, AGENTS.md, agent skills, agent frameworks, workflow engines, orchestration layers
+- inference engines, model serving, model gateways, LLM caches, and tool execution runtimes
 - RAG, embeddings, vector databases, vector stores, retrieval systems used for AI/LLM apps
+- fine-tuning, reinforcement learning, training platforms, distributed training, and AI runtime libraries
 - infrastructure, vulnerabilities, incidents, benchmarks, or research affecting the AI/agent stack
+
+Examples that should usually be marked relevant when there is a real security angle:
+- Semantic Kernel, CrewAI, AutoGen, LangChain, browser agents, coding agents
+- TrustFall, Claude Code MCP token theft, MCP configuration execution, agent workflow supply chain issues
+- Gemini CLI or GitHub Actions incidents involving coding agents or workflow execution
+- LiteLLM, LeRobot, vector database, model gateway, inference control-plane, or training-stack vulnerabilities
 
 Mark relevant=false for generic cyber, cloud, appsec, malware, or product marketing with no meaningful AI/agent angle.
 
@@ -127,7 +170,7 @@ Return strict JSON only:
 
 Rules for keywords:
 - 0 to 5 short lowercase tags
-- prefer tags like agent, agentic, llm, mcp, prompt injection, copilot, chatgpt, claude, gemini, vector database, rag, reasoning engine, workflow, framework, inference
+- prefer tags like agent, agentic, llm, mcp, a2a, agents.md, prompt injection, copilot, vector database, rag, reasoning engine, workflow, framework, inference, model gateway, coding agent
 """
 
 
