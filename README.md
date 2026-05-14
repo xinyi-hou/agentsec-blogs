@@ -24,16 +24,6 @@ The skill is meant to cover the full AI and agent software ecosystem:
 - Middle layer: agent frameworks, workflow orchestration, reasoning engines, inference engines, deployment layers, model gateways, caching, and tool execution paths
 - Bottom layer: vector databases, retrieval systems, fine-tuning, reinforcement learning, training platforms, distributed training, and AI kernel or library components
 
-## Representative Security Themes
-
-The skill should treat incident classes like these as in-scope:
-
-- `Semantic Kernel` and `CrewAI`: prompt-to-tool-to-execution and framework-level agent risks
-- `TrustFall`, `Claude Code MCP Token Theft`, and MCP by-design execution debates: protocol, skill, and config execution risk
-- `ClaudeBleed`: browser agent, cross-extension hijack, and confused deputy risk
-- `Gemini CLI` and `GitHub Actions`: agentic workflow and CI supply chain risk
-- `LiteLLM` and `LeRobot`: auth bypass, SQL injection, deserialization, and control-plane or infrastructure risk
-
 ## Install
 
 Use Codex `skill-installer` from GitHub:
